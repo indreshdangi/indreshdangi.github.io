@@ -1,73 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Indresh Dangi - Portfolio</title>
+    <title>Indresh Dangi Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+
     <link rel="stylesheet" href="css/aos.css">
+
     <link rel="stylesheet" href="css/ionicons.min.css">
+    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* Custom CSS styles */
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+
+      .skill-mf .progress {
+        margin: .5rem 0 1.2rem 0;
+        border-radius: 0;
+        height: .7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: .7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Typing animation */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+    </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Indresh Dangi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
+
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
           </ul>
         </div>
       </div>
     </nav>
-    
-    <section id="about" class="ftco-section">
-      <div class="container text-center">
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Indresh Dangi" class="rounded-circle" width="200">
-        <p>Hello! I'm <b>Indresh Dangi</b>, founder of <b>IND Services</b> and <b>Youthguru</b>. I started my online business journey at the age of 12, launched my first website at 13, and founded <b>Youthguru</b> at 15. Currently, I have a network of over 1000 retailers. I specialize in <b>web development, AI, and business strategies</b>. I'm also working on <b>KishanSarthi</b>, an AI-driven agriculture startup to help farmers.</p>
+
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/20250124_194444.png);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Indresh Dangi</span></h1>
+                  <span id="typing-animation"></span>
+                  <br><br>
+                  <h2>Founder & Entrepreneur</h2>
+                  <p><a href="https://www.youtube.com/@indservices" class="btn btn-primary py-3 px-4">YouTube</a> 
+                    <a href="https://github.com/Indreshdangi" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    
-    <section id="projects" class="ftco-section">
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
       <div class="container">
-        <h2>My Projects</h2>
-        <ul>
-          <li><b>Youthguru:</b> An online learning & earning platform</li>
-          <li><b>KishanSarthi:</b> AI-powered agriculture assistance</li>
-        </ul>
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/20250121_210531.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Indresh Dangi</span></p>
+                        <p><span class="title-s">Job Role: </span> <span>Founder & Entrepreneur</span></p>
+                        <p><span class="title-s">Experience: </span> <span>3 Years</span></p>
+                        <p><span class="title-s">Address: </span> <span>Ashoknagar, Madhya Pradesh</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Mobile App Development</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Artificial Intelligence & Machine Learning</span> <span class="pull-right">70%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Web Development</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Digital Marketing</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+                  <p>A passionate and ambitious young entrepreneur with a strong foundation in agriculture and technology. Founded Youthguru and IND Services, helping retailers with online services and business solutions. Currently learning mobile app development, AI & ML to further enhance technical skills.</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Profile:</span> <span>Entrepreneur & Developer</span></li>
+                    <li class="d-flex"><span>Domain:</span> <span>Agriculture, Technology, Digital Marketing</span></li>
+                    <li class="d-flex"><span>Education:</span> <span>Class 12 (Agriculture & Science)</span></li>
+                    <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                    <li class="d-flex"><span>Interests:</span> <span>Entrepreneurship, AI & Technology, Agriculture Innovation</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    
-    <section id="resume" class="ftco-section">
+
+    <!-- Add other sections (Resume, Projects, Contact) as needed -->
+
+    <footer class="ftco-footer ftco-section">
       <div class="container">
-        <h2>Resume</h2>
-        <p><b>Skills:</b> Web Development (HTML, CSS, JavaScript, Python), AI & ML (Learning Phase), Business & Entrepreneurship</p>
-        <p><b>Education:</b> 12th (Agriculture, MP Board)</p>
-        <p><b>Experience:</b> 5+ Years in Web Development & Online Business</p>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+          </div>
+        </div>
       </div>
-    </section>
-    
-    <section id="contact" class="ftco-section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: contact@indreshdangi.com</p>
-        <p>GitHub: <a href="https://github.com/Indreshdangi">IndreshDangi</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/indresh_dangi_">@Indresh_Dangi_</a></p>
-      </div>
-    </section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
