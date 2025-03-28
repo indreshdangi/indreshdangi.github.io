@@ -1,231 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Indresh Dangi Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Indresh Dangi</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indresh Dangi - Senior Data Analyst</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: url('bg_1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: #2c3e50;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .about-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .about-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .profile-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .profile-table td:first-child {
+            font-weight: bold;
+            width: 30%;
+        }
+        
+        /* Skills Section */
+        .skills {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .skill-item {
+            margin-bottom: 30px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+        
+        /* Experience Section */
+        .experience {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-content h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .timeline-content ul {
+            padding-left: 20px;
+        }
+        
+        .timeline-content li {
+            margin-bottom: 5px;
+        }
+        
+        /* Projects Section */
+        .projects {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-info h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        /* Achievements Section */
+        .achievements {
+            padding: 100px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .achievement-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .achievement-item {
+            flex-basis: 30%;
+            margin-bottom: 30px;
+        }
+        
+        .achievement-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Indresh Dangi</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpg);">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Indresh Dangi</span></h1>
-                  <h2>Founder of Youthguru</h2>
-                  <p><a href="https://instagram.com/indresh_dangi_" class="btn btn-primary py-3 px-4">Instagram</a> 
-                  <a href="https://github.com/indreshdangi" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HELLO!</h1>
+                <h2>I'm Indresh Dangi</h2>
+                <p>Founder of YouthGuru | Senior Data Analyst</p>
+                <div style="margin-top: 30px;">
+                    <a href="#" class="btn">YOUTUBE</a>
+                    <a href="#" class="btn">MY WORKS</a>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- About Section -->
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row d-flex align-items-stretch">
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay"></div>
-              <div class="row">
-                <div class="col-sm-6 col-md-5">
-                  <div class="about-img">
-                    <img src="images/about.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                  </div>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, & machine learning. Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+                    
+                    <table class="profile-table">
+                        <tr>
+                            <td>Profile:</td>
+                            <td>Data Science & Analytics</td>
+                        </tr>
+                        <tr>
+                            <td>Domain:</td>
+                            <td>Retail, Ecommerce, BFSI & Digital Marketing</td>
+                        </tr>
+                        <tr>
+                            <td>Education:</td>
+                            <td>AI/ML course by IIT</td>
+                        </tr>
+                        <tr>
+                            <td>Language:</td>
+                            <td>English, Hindi</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>Ashoknagar, M.P.</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col-sm-6 col-md-7">
-                  <div class="about-info">
-                    <p><span class="title-s">Name: </span> <span>Indresh Dangi</span></p>
-                    <p><span class="title-s">Job Role: </span> <span>Founder & Entrepreneur</span></p>
-                    <p><span class="title-s">Experience: </span> <span>3 Years</span></p>
-                    <p><span class="title-s">Address: </span> <span>Ashoknagar, MP</span></p>
-                  </div>
+                <div class="about-image">
+                    <img src="20250121_210531.png" alt="Indresh Dangi">
                 </div>
-              </div>
-
-              <div class="skill-mf">
-                <p class="title-s">Skills</p>
-                <span>Mobile App Development</span> <span class="pull-right">80%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span>Web Development</span> <span class="pull-right">85%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span>Digital Marketing</span> <span class="pull-right">75%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="row justify-content-start pb-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h1 class="big">About</h1>
-                <h2 class="mb-4">About Me</h2>
-                <p>A passionate entrepreneur with expertise in technology and agriculture. Founder of Youthguru and IND Services.</p>
-                <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex"><span>Profile:</span> <span>Entrepreneur & Developer</span></li>
-                  <li class="d-flex"><span>Domain:</span> <span>Agriculture, Technology</span></li>
-                  <li class="d-flex"><span>Education:</span> <span>Class 12 (Agriculture)</span></li>
-                  <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SQL</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PYTHON</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Data Visualization</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="resume">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021-Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Data Analyst - MERKLE</h3>
+                        <p>Markle, a leading CXM and media company with over 10k+ professionals globally. It's a part of Dentsu International.</p>
+                        <ul>
+                            <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+                            <li>Developed time series forecasting models to predict sales and optimize marketing budgets.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018-2021</div>
+                    <div class="timeline-content">
+                        <h3>Senior Data Analyst - IQUANTI</h3>
+                        <p>iQuant is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.</p>
+                        <ul>
+                            <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+                            <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2018-2023</div>
+                    <div class="timeline-content">
+                        <h3>Middle School - VISVESVARAYA TECHNOLOGICAL UNIVERSITY</h3>
+                        <p>Grade: First class distinction.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-2025</div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary School - ARMY PUBLIC SCHOOL</h3>
+                        <p>Grade: First class distinction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">My Projects</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="#">Youthguru</a></h3>
-                <p>E-learning and skill development platform</p>
-              </div>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Below are the sample Data Analytics projects on SQL Python, Power BI & ML.</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj_1.jpg" alt="Digital Music Store Data Analysis">
+                    </div>
+                    <div class="project-info">
+                        <h3>Digital Music Store Data Analysis</h3>
+                        <p>Data Analysis using Python Project</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj_2.jpg" alt="Power BI Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Power BI Sales Dashboard</h3>
+                        <p>Interactive sales analytics dashboard</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj_3.jpg" alt="Machine Learning Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation</h3>
+                        <p>ML project using clustering algorithms</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="#">Kishan Sharthi</a></h3>
-                <p>Agriculture solutions platform</p>
-              </div>
-            </div>
-          </div>
+            
+            <p style="text-align: center; margin-top: 40px;">
+                <strong>More projects on GitHub</strong><br>
+                I love to solve business problems & uncover hidden data stories
+            </p>
         </div>
-      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-container">
+                <div class="achievement-item">
+                    <div class="achievement-number">30+</div>
+                    <div class="achievement-text">Projects Completed</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">1,000+</div>
+                    <div class="achievement-text">Mentored Students</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">500+</div>
+                    <div class="achievement-text">Cups of Coffee</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-          </div>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div style="text-align: center; margin-bottom: 50px;">
+                <img src="loc.png" alt="Location" style="max-width: 100%; height: auto;">
+            </div>
         </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-           <div class="align-self-stretch box p-4 text-center">
-             <div class="icon d-flex align-items-center justify-content-center">
-               <span class="icon-phone2"></span>
-             </div>
-             <h3 class="mb-4">Contact</h3>
-             <p><a href="tel://6261913598">+91 6261913598</a></p>
-           </div>
-         </div>
-         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-           <div class="align-self-stretch box p-4 text-center">
-             <div class="icon d-flex align-items-center justify-content-center">
-               <span class="icon-paper-plane"></span>
-             </div>
-             <h3 class="mb-4">Email</h3>
-             <p><a href="mailto:contact@indreshdangi.com">contact@indreshdangi.com</a></p>
-           </div>
-         </div>
-         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-           <div class="align-self-stretch box p-4 text-center">
-             <div class="icon d-flex align-items-center justify-content-center">
-               <span class="icon-github"></span>
-             </div>
-             <h3 class="mb-4">GitHub</h3>
-             <p><a href="https://github.com/indreshdangi">indreshdangi</a></p>
-           </div>
-         </div>
-        </div>
-      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-          </div>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin">LINKEDIN</i></a>
+                <a href="#"><i class="fab fa-github">GITHUB</i></a>
+                <a href="#"><i class="fab fa-youtube">YOUTUBE</i></a>
+            </div>
+            <p>&copy; 2023 Indresh Dangi. All rights reserved.</p>
         </div>
-      </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/main.js"></script>
-    
-  </body>
+</body>
 </html>
