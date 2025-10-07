@@ -1,409 +1,65 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
+/* Add these styles to your existing style.css file or replace it. */
+
+/* Subtle fade-in animation for sections */
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
 }
 
-:root {
-    --bg-color-dark: #1a1a1a;
-    --second-bg-color-dark: #2a2a2a;
-    --text-color-dark: #ededed;
-    --main-color: #ffbd39;
-    
-    --bg-color-light: #f4f4f4;
-    --second-bg-color-light: #e4e4e4;
-    --text-color-light: #333;
+.ftco-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
-body {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background: var(--bg-color-dark);
-    color: var(--text-color-dark);
-}
-
-body.light-mode {
-    background: var(--bg-color-light);
-    color: var(--text-color-light);
-}
-
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transition: background-color 0.3s;
-}
-
-body.dark-mode .header { background: rgba(26, 26, 26, 0.8); }
-body.light-mode .header { background: rgba(244, 244, 244, 0.8); }
-
-.logo {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-body.dark-mode .logo { color: var(--text-color-dark); }
-body.light-mode .logo { color: var(--text-color-light); }
-
-
-.navbar a {
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin-left: 3.5rem;
-    transition: 0.3s;
-}
-body.dark-mode .navbar a { color: var(--text-color-dark); }
-body.light-mode .navbar a { color: var(--text-color-light); }
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color);
-}
-
-/* Theme Switcher */
-.theme-switcher {
-    cursor: pointer;
-    font-size: 2.5rem;
-}
-.light-icon { display: none; }
-body.light-mode .light-icon { display: inline-block; }
-body.light-mode .dark-icon { display: none; }
-
-
-/* Home Section */
-.home {
-    display: flex;
-    align-items: center;
-}
-
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--main-color);
-}
-
-.home-content p {
-    font-size: 1.6rem;
-}
-
-.btn-box {
-    display: flex;
-    justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 100%;
-    background: var(--main-color);
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    color: var(--bg-color-dark);
-    transition: 0.5s;
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--main-color);
-    border: 0.2rem solid var(--main-color);
-}
-
-/* About Section */
-.about {
-    background: var(--second-bg-color-dark);
-}
-body.light-mode .about { background: var(--second-bg-color-light); }
-
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
-.heading span {
-    color: var(--main-color);
-}
-
-.about-content {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-
-/* Education Section */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: var(--main-color);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-}
-
-.timeline-item:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    left: 50%;
-}
-
-.timeline-content {
-    padding: 20px 30px;
-    background: var(--second-bg-color-dark);
-    position: relative;
-    border-radius: 6px;
-}
-body.light-mode .timeline-content { background: var(--second-bg-color-light); }
-
-
-/* Projects Section */
-.projects {
-    background: var(--bg-color-dark);
-}
-body.light-mode .projects { background: var(--bg-color-light); }
-
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 5rem;
-}
-
-.project-card {
-    padding: 3rem 2rem;
-    text-align: center;
-    background: var(--second-bg-color-dark);
-    border-radius: 2rem;
+/* Hover effect for project images */
+.blog-entry .img {
+    -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
 }
-body.light-mode .project-card { background: var(--second-bg-color-light); }
 
-
-.project-card:hover {
-    transform: translateY(-1rem);
+.blog-entry:hover .img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-.project-card i {
-    font-size: 5rem;
-    color: var(--main-color);
-    margin-bottom: 1rem;
+/* Typography and Alignment Improvements */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
-.project-card h3 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-}
-
-.project-card p {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-}
-
-
-/* Certificates Section */
-.certificates {
-    background: var(--second-bg-color-dark);
-}
-body.light-mode .certificates { background: var(--second-bg-color-light); }
-
-
-.certificate-card {
-    max-width: 600px;
-    margin: 5rem auto 0;
-    padding: 3rem;
-    text-align: center;
-    background: var(--bg-color-dark);
-    border-radius: 2rem;
-}
-body.light-mode .certificate-card { background: var(--bg-color-light); }
-
-
-.msme-badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.msme-badge img {
-    width: 80px;
-    margin-right: 1.5rem;
-}
-
-.msme-badge h3 {
-    font-size: 2.4rem;
-    color: var(--main-color);
-}
-
-/* Skills Section */
-.skills-container {
-    margin-top: 5rem;
-}
-
-.skill-bar {
-    margin-bottom: 2.5rem;
-}
-
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill-info span {
-    font-size: 1.8rem;
+h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.progress-line {
-    height: 0.8rem;
-    width: 100%;
-    background: var(--second-bg-color-dark);
-    border-radius: 1rem;
-    position: relative;
-}
-body.light-mode .progress-line { background: var(--second-bg-color-light); }
-
-.progress-line span {
-    height: 100%;
-    background: var(--main-color);
-    position: absolute;
-    border-radius: 1rem;
+.heading-section h2 {
+    font-weight: 700;
 }
 
-/* Resume Section */
-.resume {
-    background: var(--second-bg-color-dark);
-    text-align: center;
-}
-body.light-mode .resume { background: var(--second-bg-color-light); }
-
-.resume p {
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+.ftco-section {
+    padding: 7em 0;
 }
 
-
-/* Contact Section */
-.contact form {
-    max-width: 70rem;
-    margin: 0 auto;
-    text-align: center;
+.ftco-about .img-about .img {
+    border-radius: 10px;
 }
 
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.resume-wrap {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    border-radius: 0.8rem;
-    margin-bottom: 2rem;
-}
-body.dark-mode .contact form .input-box input,
-body.dark-mode .contact form textarea {
-    background: var(--second-bg-color-dark);
-    color: var(--text-color-dark);
-}
-body.light-mode .contact form .input-box input,
-body.light-mode .contact form textarea {
-    background: var(--second-bg-color-light);
-    color: var(--text-color-light);
+.resume-wrap:hover {
+    background: rgba(255, 189, 57, 0.1);
+    border: 1px solid #ffbd39;
 }
 
-.contact form .input-box input {
-    width: 49%;
-}
-
-/* Footer */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--second-bg-color-dark);
-}
-body.light-mode .footer { background: var(--second-bg-color-light); }
-
-.footer-text p {
-    font-size: 1.6rem;
-}
-
-.footer-social a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: 0.2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
-    margin-left: 1rem;
-    transition: 0.5s;
-}
-
-.footer-social a:hover {
-    background: var(--main-color);
-    color: var(--bg-color-dark);
+.contact-section .form-control {
+    border: 1px solid #333;
 }
