@@ -1,1122 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indresh Dangi - Visionary Entrepreneur & AI Innovator</title>
-    <meta name="description" content="Indresh Dangi - 18-year-old entrepreneur, AI innovator, and founder of IND Services, Youthguru, and KishanSarthi. Building the future with Indresh 2.0 AI ecosystem.">
-    <meta name="keywords" content="Indresh Dangi, AI Entrepreneur, Youthguru, KishanSarthi, IND Services, AI Innovation, Digital Bharat">
+  <head>
+    <title>Indresh Dangi Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Indresh Dangi - Visionary Entrepreneur & AI Innovator">
-    <meta property="og:description" content="Building India's future with indigenous AI solutions and digital entrepreneurship">
-    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Hind+Vadodara:wght@400;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --primary-light: #3b82f6;
-            --saffron: #f97316;
-            --saffron-dark: #ea580c;
-            --white: #ffffff;
-            --green: #16a34a;
-            --green-dark: #15803d;
-            --dark: #0f172a;
-            --darker: #020617;
-            --light: #f8fafc;
-            --gray: #94a3b8;
-            --gray-light: #e2e8f0;
-            
-            --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            --gradient-saffron: linear-gradient(135deg, var(--saffron) 0%, var(--saffron-dark) 100%);
-            --gradient-green: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
-            --gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #0f172a 50%, #1e293b 100%);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            overflow-x: hidden;
-            line-height: 1.7;
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-        /* Enhanced Background with AI Particles */
-        .ai-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(22, 163, 74, 0.03) 0%, transparent 50%);
-        }
+    <link rel="stylesheet" href="css/aos.css">
 
-        .neural-network {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.1;
-            background-image: 
-                linear-gradient(rgba(37, 99, 235, 0.2) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(37, 99, 235, 0.2) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: neuralMove 20s linear infinite;
-        }
-
-        @keyframes neuralMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
-
-        .ai-particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: floatParticle 15s infinite linear;
-        }
-
-        @keyframes floatParticle {
-            0% {
-                transform: translateY(100vh) translateX(0) scale(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.7;
-            }
-            90% {
-                opacity: 0.7;
-            }
-            100% {
-                transform: translateY(-100px) translateX(100px) scale(1);
-                opacity: 0;
-            }
-        }
-
-        /* Modern Container */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Enhanced Header */
-        header {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .header-scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-primary);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-main {
-            font-family: 'Teko', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--dark);
-            line-height: 1;
-        }
-
-        .logo-sub {
-            font-size: 0.8rem;
-            color: var(--saffron);
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            position: relative;
-            padding: 8px 0;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--primary);
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gradient-primary);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .theme-toggle {
-            background: none;
-            border: none;
-            color: var(--dark);
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-
-        .theme-toggle:hover {
-            background: var(--gray-light);
-        }
-
-        /* Enhanced Hero Section */
-        .hero {
-            padding: 160px 0 100px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(37, 99, 235, 0.1);
-            color: var(--primary);
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-            border: 1px solid rgba(37, 99, 235, 0.2);
-            backdrop-filter: blur(10px);
-        }
-
-        .hero-title {
-            font-family: 'Teko', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.4rem;
-            color: var(--gray);
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 14px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: var(--gradient-primary);
-            color: white;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.9);
-            color: var(--dark);
-            border: 1px solid var(--gray-light);
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-secondary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Enhanced Features Section */
-        .section {
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 70px;
-        }
-
-        .section-badge {
-            display: inline-block;
-            background: var(--gradient-saffron);
-            color: white;
-            padding: 6px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .section-heading {
-            font-family: 'Teko', sans-serif;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-
-        .section-description {
-            font-size: 1.2rem;
-            color: var(--gray);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--gradient-primary);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: rgba(37, 99, 235, 0.1);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-            color: var(--primary);
-            font-size: 2rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-
-        .feature-card p {
-            color: var(--gray);
-            margin-bottom: 20px;
-        }
-
-        .feature-tag {
-            display: inline-block;
-            background: rgba(22, 163, 74, 0.1);
-            color: var(--green);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            border: 1px solid rgba(22, 163, 74, 0.2);
-        }
-
-        /* Indresh 2.0 Highlight Section */
-        .ai-showcase {
-            background: var(--gradient-hero);
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .ai-showcase::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.03)" points="0,1000 1000,0 1000,1000"/></svg>');
-            background-size: cover;
-        }
-
-        .ai-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .ai-title {
-            font-family: 'Teko', sans-serif;
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .ai-subtitle {
-            font-size: 1.3rem;
-            color: #cbd5e1;
-            margin-bottom: 40px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .ai-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .ai-feature {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border-radius: 16px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .ai-feature:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-5px);
-        }
-
-        .ai-feature i {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #60a5fa;
-        }
-
-        .ai-feature h4 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .ai-feature p {
-            color: #cbd5e1;
-            font-size: 0.95rem;
-        }
-
-        /* Timeline Section */
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 2px;
-            background: var(--gray-light);
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .timeline-content {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid var(--gray-light);
-            width: 45%;
-            position: relative;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-right: auto;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-left: auto;
-        }
-
-        .timeline-year {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: var(--gradient-primary);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: 700;
-            z-index: 2;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-year {
-            right: -80px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-year {
-            left: -80px;
-        }
-
-        .timeline-content h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-
-        .timeline-content p {
-            color: var(--gray);
-            margin-bottom: 15px;
-        }
-
-        /* MSME Certificate Section */
-        .certificate-section {
-            background: white;
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid var(--gray-light);
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .certificate-badge {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-saffron);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            color: white;
-            font-size: 2rem;
-        }
-
-        .certificate-title {
-            font-family: 'Teko', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-
-        .certificate-description {
-            color: var(--gray);
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Enhanced Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 80px 0 30px;
-            position: relative;
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(to right, var(--saffron), var(--white), var(--green));
-            background-size: 200% 200%;
-            animation: gradient 3s ease infinite;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin-bottom: 50px;
-        }
-
-        .footer-column h3 {
-            font-family: 'Teko', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            color: white;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-link {
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            text-align: center;
-            color: #94a3b8;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .copyright-hindi {
-            font-family: 'Hind Vadodara', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--saffron);
-            margin-top: 10px;
-        }
-
-        /* Floating Action Button */
-        .floating-actions {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 1000;
-        }
-
-        .floating-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.3rem;
-            text-decoration: none;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .floating-btn-primary {
-            background: var(--gradient-primary);
-        }
-
-        .floating-btn-secondary {
-            background: var(--gradient-saffron);
-        }
-
-        .floating-btn:hover {
-            transform: translateY(-5px) scale(1.1);
-        }
-
-        .tooltip {
-            position: absolute;
-            right: 70px;
-            background: var(--dark);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 8px;
-            font-size: 0.8rem;
-            white-space: nowrap;
-            opacity: 0;
-            transform: translateX(10px);
-            transition: all 0.3s ease;
-            pointer-events: none;
-        }
-
-        .floating-btn:hover .tooltip {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero-title {
-                font-size: 3.5rem;
-            }
-            
-            .section-heading {
-                font-size: 2.5rem;
-            }
-            
-            .timeline::before {
-                left: 30px;
-            }
-            
-            .timeline-content {
-                width: calc(100% - 80px);
-                margin-left: 80px !important;
-            }
-            
-            .timeline-year {
-                left: 0 !important;
-                right: auto !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero-title {
-                font-size: 2.8rem;
-            }
-            
-            .hero-cta {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .ai-title {
-                font-size: 3rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-        }
-
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .slide-in-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.6s ease;
-        }
-
-        .slide-in-left.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .slide-in-right {
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.6s ease;
-        }
-
-        .slide-in-right.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    </style>
-</head>
-<body>
-    <!-- AI Background Elements -->
-    <div class="ai-bg"></div>
-    <div class="neural-network"></div>
-    <div class="ai-particles" id="aiParticles"></div>
+    <link rel="stylesheet" href="css/ionicons.min.css">
     
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">ID</div>
-                    <div class="logo-text">
-                        <div class="logo-main">INDRESH DANGI</div>
-                        <div class="logo-sub">Entrepreneur & AI Innovator</div>
-                    </div>
-                </div>
-                
-                <div class="nav-links">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#timeline" class="nav-link">Journey</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge fade-in">
-                    <i class="fas fa-rocket"></i>
-                    <span>Building the Future of AI</span>
-                </div>
-                
-                <h1 class="hero-title fade-in">
-                    Visionary Entrepreneur<br>
-                    & <span style="background:linear-gradient(135deg, var(--saffron) 0%, var(--green) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI Innovator</span>
-                </h1>
-                
-                <p class="hero-subtitle fade-in">
-                    Hi, I'm Indresh Dangi - an 18-year-old entrepreneur building IND Services, Youthguru, and KishanSarthi. 
-                    Currently developing Indresh 2.0, a visionary AI ecosystem designed to bring automation and intelligence into daily life.
-                </p>
-                
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary fade-in">
-                        <i class="fas fa-bolt"></i>
-                        Explore Projects
-                    </a>
-                    <a href="#contact" class="btn btn-secondary fade-in">
-                        <i class="fas fa-handshake"></i>
-                        Collaborate
-                    </a>
-                </div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Indresh Dangi</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/20250124_194444.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Indresh Dangi</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Entrepreneur  ',
+						'Founder of Youthguru  ',
+						'AI Innovator   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Visionary Entrepreneur & AI Innovator</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@indservices" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/indreshdangi" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
     </section>
-    
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-title">
-                <span class="section-badge">About Me</span>
-                <h2 class="section-heading">The Journey of Innovation</h2>
-                <p class="section-description">
-                    From building my first website at 14 to founding multiple startups, my journey is about using technology to empower everyone.
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card slide-in-left">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Entrepreneurial Spirit</h3>
-                    <p>Founded first business at 14 and built a network of 1000+ retailers through innovative digital solutions.</p>
-                    <span class="feature-tag">Leadership</span>
-                </div>
-                
-                <div class="feature-card slide-in-left">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI & Innovation</h3>
-                    <p>Passionate about merging AI with practical solutions. Building Indresh 2.0 - an advanced AI ecosystem.</p>
-                    <span class="feature-tag">Technology</span>
-                </div>
-                
-                <div class="feature-card slide-in-left">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Education & Growth</h3>
-                    <p>Currently pursuing BCA at DAVV University while building the future through technology and innovation.</p>
-                    <span class="feature-tag">Learning</span>
-                </div>
-            </div>
-        </div>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/20250121_210531.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Indresh Dangi</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Founder & CEO</span></p>
+										<p><span class="title-s">Experience: </span> <span>4+ Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Ashoknagar, Madhya Pradesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Entrepreneurship</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Artificial Intelligence</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Business Development</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Leadership</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I'm Indresh Dangi, a young entrepreneur and AI innovator from Ashoknagar, Madhya Pradesh. I started my first business at the age of 14 and have since built multiple startups — IND Services, Youthguru, and KishanSarthi. My latest project, Indresh 2.0, focuses on integrating artificial intelligence into real-world applications for business and individuals.</p>
+								
+								<p>I'm passionate about turning ideas into impact using technology, design, and leadership.</p>
+								
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Entrepreneur & AI Innovator</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>AI Technology, Education, Agriculture, Digital Services</span></li>
+									<li class="d-flex"><span>Education:</span> <span>BCA - DAVV University, Indore</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Business Tools:</span> <span>AI Systems, Web Platforms, Digital Marketing</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Startup Strategy, Team Management, Digital Branding, Machine Learning</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Technology Innovation, Entrepreneurship, AI Research</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="1000">0</span> <span>+</span>
+									<span>&nbsp; Retailers Network</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/indreshdangi/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
-    
-    <!-- Indresh 2.0 Showcase -->
-    <section class="section ai-showcase" id="projects">
-        <div class="container">
-            <div class="ai-content">
-                <span class="section-badge">Flagship Project</span>
-                <h2 class="ai-title">Indresh 2.0 AI Ecosystem</h2>
-                <p class="ai-subtitle">
-                    An advanced AI system designed to merge machine learning, automation, and creative intelligence into one unified platform.
-                </p>
-                
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-eye"></i>
-                    Explore Indresh 2.0
-                </a>
-                
-                <div class="ai-features">
-                    <div class="ai-feature slide-in-left">
-                        <i class="fas fa-brain"></i>
-                        <h4>Intelligent Automation</h4>
-                        <p>Smart workflows that learn and adapt to your unique business needs and preferences.</p>
-                    </div>
-                    
-                    <div class="ai-feature slide-in-left">
-                        <i class="fas fa-comments"></i>
-                        <h4>Natural Conversations</h4>
-                        <p>Advanced NLP supporting multiple languages with cultural context and understanding.</p>
-                    </div>
-                    
-                    <div class="ai-feature slide-in-left">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Predictive Analytics</h4>
-                        <p>Data-driven insights and forecasting to help you make better business decisions.</p>
-                    </div>
-                    
-                    <div class="ai-feature slide-in-left">
-                        <i class="fas fa-shield-alt"></i>
-                        <h4>Secure & Private</h4>
-                        <p>Enterprise-grade security with complete data sovereignty and privacy protection.</p>
-                    </div>
-                </div>
-            </div>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Visionary entrepreneur with 4+ years of experience in building startups and digital solutions. Expertise in AI technology, business development, and digital innovation.</p>
+          </div>
         </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Founder & CEO</h2>
+						<span class="position">IND Services</span>
+						<p class="mt-4">Digital service platform providing comprehensive solutions for businesses and government services.
+							<ul>
+								<li>Built network of 1000+ retailers across India</li>
+								<li>Provided digital solutions for local businesses</li>
+								<li>Expanded services to include government digital initiatives</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-Present</span>
+						<h2>Founder</h2>
+						<span class="position">Youthguru</span>
+						<p class="mt-4">Education and entrepreneurship network empowering young learners and entrepreneurs.
+							<ul>
+								<li>Mentored 1000+ young entrepreneurs and students</li>
+								<li>Created learning platforms for skill development</li>
+								<li>Built community of innovators and creators</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024-2025</span>
+    					<h2>Higher Secondary (12th)</h2>
+    					<span class="position">Completed</span>
+    					<p class="mt-4">Successfully completed higher secondary education with focus on technology and business studies.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2025-Present</span>
+    					<h2>Bachelor of Computer Applications</h2>
+    					<span class="position">DAVV University, Indore</span>
+    					<p class="mt-4">Currently pursuing BCA with focus on artificial intelligence, software development, and business technology.</p>
+    				</div>
+				</div>
+    		</div>
+			
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Certifications & Achievements</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-Present</span>
+						<h2>MSME Registered Entrepreneur</h2>
+						<span class="position">Government of India Recognized</span>
+						<p class="mt-4">Officially registered MSME entrepreneur recognized for innovation and contribution to digital entrepreneurship and technology solutions.</p>
+					</div>
+				</div>
+			</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="Indresh_Dangi_Resume.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
     </section>
-    
-    <!-- Timeline Section -->
-    <section class="section" id="timeline">
-        <div class="container">
-            <div class="section-title">
-                <span class="section-badge">My Journey</span>
-                <h2 class="section-heading">Path to Innovation</h2>
-                <p class="section-description">
-                    From young entrepreneur to AI innovator - the milestones that shaped my journey.
-                </p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content slide-in-left">
-                        <h3>First Business Venture</h3>
-                        <p>Started my entrepreneurial journey at age 14 with my first digital service business.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-content slide-in-right">
-                        <h3>IND Services Launch</h3>
-                        <p>Founded IND Services - a comprehensive digital platform for business and government services.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <div class="timeline-content slide-in-left">
-                        <h3>Youthguru & Expansion</h3>
-                        <p>Launched Youthguru to mentor young entrepreneurs and expanded retailer network to 1000+.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-                    <div class="timeline-content slide-in-right">
-                        <h3>KishanSarthi & AI Focus</h3>
-                        <p>Started KishanSarthi AI agriculture project and began development of Indresh 2.0 AI ecosystem.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content slide-in-left">
-                        <h3>BCA & Future Vision</h3>
-                        <p>Started Bachelor of Computer Applications while advancing AI research and startup development.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- MSME Certificate Section -->
-            <div class="certificate-section fade-in">
-                <div class="certificate-badge">
-                    <i class="fas fa-award"></i>
-                </div>
-                <h3 class="certificate-title">MSME Registered Entrepreneur</h3>
-                <p class="certificate-description">
-                    Officially recognized by the Ministry of Micro, Small & Medium Enterprises, 
-                    Government of India for innovation and contribution to digital entrepreneurship.
-                </p>
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-download"></i>
-                    View Certificate
-                </a>
-            </div>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are my key projects and initiatives in entrepreneurship and AI innovation.</p>
+          </div>
         </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://indservices.site" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://indservices.site">IND Services</a></h3>
+                <p>Comprehensive digital service platform providing business and government solutions with 1000+ retailer network.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://youthguru.in" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://youthguru.in">Youthguru</a></h3>
+                <p>Education and entrepreneurship network empowering young learners with skills and mentorship opportunities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://kishansarthi.com" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://kishansarthi.com">KishanSarthi</a></h3>
+                <p>AI-powered agriculture startup helping farmers with smart farming solutions and modern agricultural technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://indreshdangi.github.io" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://indreshdangi.github.io">Indresh 2.0 AI Ecosystem</a></h3>
+				  <p>Advanced AI system combining intelligent automation, business tools, and creativity. Making AI accessible and business-ready.</p>
+				  <p><a href="https://indreshdangi.github.io" class="btn btn-primary btn-sm">Learn More</a></p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/indreshdangi" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/indreshdangi">Personal AI Agent System</a></h3>
+				  <p>Jarvis-style intelligent assistant prototype with automation capabilities and natural language processing.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
     </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Startups Founded</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Retailers Network</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Students Mentored</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to build solutions that make a difference </h4>
+						<br>
+						<p><a href="https://github.com/indreshdangi" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Ashoknagar, Madhya Pradesh, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel:+919926739248">+91 9926739248</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:contact@indreshdangi.in">contact@indreshdangi.in</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="Indresh_Dangi_Resume.pdf">Download PDF</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="mailto:contact@indreshdangi.in" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@indservices"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/indreshdangi/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/indreshdangi"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://indservices.site"><span class="icon-globe"></span></a></li>
+				      <li class="ftco-animate"><a href="https://instagram.com/indresh_dangi_"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Indresh Dangi | <a href="https://indservices.site" target="_blank">IND Services</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
     
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Indresh Dangi</h3>
-                    <p style="color: #94a3b8; margin-bottom: 20px;">
-                        Visionary entrepreneur building India's future with indigenous AI solutions and digital innovation.
-                    </p>
-                    <div class="social-links">
-                        <a
+  </body>
+</html>
